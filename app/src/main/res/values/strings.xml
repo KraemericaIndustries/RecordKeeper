@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Section13 - Record Keeper</string>
+    <string name="running">Running</string>
+    <string name="cycling">Cycling</string>
+    <string name="running_image_description">Running Image</string>
+    <string name="cycling_image_description">Running Image</string>
+    <string name="five_km_heading">5km</string>
+    <string name="longest_ride_heading">Longest Ride</string>
+    <string name="biggest_climb_heading">Biggest Climb</string>
+    <string name="best_average_speed_heading">Best Average Speed</string>
+    <string name="ten_km_heading">10km</string>
+    <string name="fifteen_km_heading">15km</string>
+    <string name="twenty_km_heading">20km</string>
+    <string name="reset_running_records">Reset Running Records</string>
+    <string name="reset_cycling_records">Reset Cycling Records</string>
+    <string name="reset_all_records">Reset All Records</string>
+</resources>
