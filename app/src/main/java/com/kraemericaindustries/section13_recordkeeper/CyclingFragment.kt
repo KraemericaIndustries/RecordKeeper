@@ -7,11 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.kraemericaindustries.section13_recordkeeper.databinding.FragmentCyclingBinding
-
 class CyclingFragment : Fragment() {
-
     private lateinit var binding: FragmentCyclingBinding
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -23,18 +20,14 @@ class CyclingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setupClickListeners()
     }
-
     private fun setupClickListeners() {
-
         binding.containerLongestRide.setOnClickListener { launchCyclingRecordScreen("Longest Ride") }
         binding.containerBiggestClimb.setOnClickListener { launchCyclingRecordScreen("Biggest Climb") }
         binding.containerBestAverageSpeed.setOnClickListener { launchCyclingRecordScreen("Best Average Speed") }
 
     }
-
     private fun launchCyclingRecordScreen(heading: String) {
         val intent = Intent(context, EditCyclingRecordActivity::class.java)
         intent.putExtra("Heading", heading)
