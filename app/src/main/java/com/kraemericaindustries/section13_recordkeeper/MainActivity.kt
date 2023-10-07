@@ -7,21 +7,18 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
 import com.google.android.material.navigation.NavigationBarView
+import com.kraemericaindustries.section13_recordkeeper.cycling.CyclingFragment
 import com.kraemericaindustries.section13_recordkeeper.databinding.ActivityMainBinding
+import com.kraemericaindustries.section13_recordkeeper.running.RunningFragment
+
 class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        Log.d("BobKraemer", "INSIDE onCreate()")
         binding.bottomNav.setOnItemSelectedListener(this)
     }
-
-//    override fun onBackPressed() {
-//        super.onBackPressed()
-//        Toast.makeText(this, "Back button pressed", Toast.LENGTH_LONG).show()
-//    }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar, menu)
         return true
