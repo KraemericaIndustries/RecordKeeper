@@ -8,6 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.kraemericaindustries.section13_recordkeeper.EditRecordActivity
+import com.kraemericaindustries.section13_recordkeeper.INTENT_EXTRA_SCREEN_DATA
+import com.kraemericaindustries.section13_recordkeeper.RUNNING
 import com.kraemericaindustries.section13_recordkeeper.databinding.FragmentRunningBinding
 
 class RunningFragment : Fragment() {
@@ -36,7 +39,7 @@ class RunningFragment : Fragment() {
         binding.container20km.setOnClickListener { launchRunningRecordScreen("20km") }
     }
     private fun displayRecords() {
-        val runningPreferences = requireContext().getSharedPreferences("running", Context.MODE_PRIVATE)
+        val runningPreferences = requireContext().getSharedPreferences(RUNNING, Context.MODE_PRIVATE)
 
         binding.textView5kmValue.text = runningPreferences.getString("5km record", null)
         binding.textView5kmDate.text = runningPreferences.getString("5km date", null)
@@ -48,8 +51,8 @@ class RunningFragment : Fragment() {
         binding.textView20kmDate.text = runningPreferences.getString("20km date", null)
     }
     private fun launchRunningRecordScreen(distance: String) {
-        val intent = Intent(context, EditRunningRecordActivity::class.java)
-        intent.putExtra("Distance", distance)
+        val intent = Intent(context, EditRecordActivity::class.java)
+        intent.putExtra(INTENT_EXTRA_SCREEN_DATA, EditRecordActivity.ScreenData(distance, RUNNING, "Time"))
         startActivity(intent)
     }
 }
