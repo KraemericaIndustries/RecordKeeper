@@ -58,22 +58,18 @@
 
                 <TextView
                     android:id="@+id/text_view_5km_heading"
+                    style="@style/RecordNameTextAppearance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:text="@string/five_km_heading"
-                    android:textColor="?attr/colorPrimary"
-                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/text_view_5km_value"
+                    style="@style/RecordValueTextAppearance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/dark_grey"
-                    android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="22:04" />
@@ -106,22 +102,18 @@
 
                 <TextView
                     android:id="@+id/text_view_10km_heading"
+                    style="@style/RecordNameTextAppearance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:text="@string/ten_km_heading"
-                    android:textColor="?attr/colorPrimary"
-                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/text_view_10km_value"
+                    style="@style/RecordValueTextAppearance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/dark_grey"
-                    android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="22:04" />
@@ -154,22 +146,18 @@
 
                 <TextView
                     android:id="@+id/text_view_15km_heading"
+                    style="@style/RecordNameTextAppearance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:text="@string/fifteen_km_heading"
-                    android:textColor="?attr/colorPrimary"
-                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/text_view_15km_value"
+                    style="@style/RecordValueTextAppearance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/dark_grey"
-                    android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="22:04" />
@@ -202,22 +190,18 @@
 
                 <TextView
                     android:id="@+id/text_view_20km_heading"
+                    style="@style/RecordNameTextAppearance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:text="@string/twenty_km_heading"
-                    android:textColor="?attr/colorPrimary"
-                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/text_view_20km_value"
+                    style="@style/RecordValueTextAppearance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/dark_grey"
-                    android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="22:04" />
